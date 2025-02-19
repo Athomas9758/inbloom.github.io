@@ -1,0 +1,12 @@
+
+  
+  header img.center-img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  header h1, header p {
+    color: #333;
+    margin: 0;
+    text-align: center;
+  }
