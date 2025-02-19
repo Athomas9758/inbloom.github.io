@@ -47,8 +47,45 @@ h1 {
   }
   
 
+  /* Confirmation Container */
+#confirmation-details {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  color: #918FA3;
+}
+
+/* Order Summary */
+#order-items {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+#order-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* Total Price */
+#order-total-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: #918FA3;
+}
+
  
-/*will fix */
+/* Will fix */
 header {
   text-align: center; /* Centers the image */
   height: auto; /* Adjust height based on image */
