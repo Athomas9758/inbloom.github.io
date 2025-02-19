@@ -1,12 +1,51 @@
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 
-  
-  header img.center-img {
-    display: block;
-    margin: 0 auto;
+  header img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  /* Position the menu icon to the left */
+  .menu-icon {
+    position: absolute;
+    left: 10px; /* Adjust this value to position the icon as needed */
+    font-size: 30px;
+    cursor: pointer;
   }
   
-  header h1, header p {
-    color: #333;
+  /* Hide the menu by default */
+  #menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
     margin: 0;
-    text-align: center;
+    position: absolute;
+    left: 10px; /* Align the menu to the left */
+    top: 50px; /* Adjust this value to position the menu below the icon */
+    background-color: #fff; /* Optional: Add background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
   }
+  
+  /* Style the menu items */
+  #menu li {
+    margin: 10px 0;
+  }
+  
+  /* Style the menu links */
+  #menu li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px; /* Optional: Add padding for better spacing */
+  }
+  
+  /* Show the menu when active */
+  #menu.active {
+    display: block;
+  }
+  
+  
