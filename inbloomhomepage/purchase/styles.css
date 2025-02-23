@@ -1,17 +1,19 @@
 body {
-  font-family: 'Times'; /* change font */
+  font-family: 'Times';
+  /* change font */
   background-color: white;
   margin: 0;
   padding: 20px;
 }
-  
+
 h1 {
   padding: 30px;
   text-align: center;
   color: #918FA3;
-  font-family: 'Times'; /* change font */
+  font-family: 'Times';
+  /* change font */
 }
-  
+
 
 
 .item {
@@ -35,29 +37,37 @@ h1 {
 }
 
 
-  
-  button {
-    padding: 10px;
-    background-color: #EAC2B9;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Times';
-  }
-  
 
- 
-/*will fix */
-header {
-  text-align: center; /* Centers the image */
-  height: auto; /* Adjust height based on image */
+button {
+  padding: 10px;
+  background-color: #EAC2B9;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Times';
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
 }
 
-header img {
-  width: 100%; /* Shrinks the image while keeping full visibility */
-  height: auto; /* Maintains aspect ratio */
-  max-height: 195px; /* Ensures the header is not too tall */
+
+
+/*will fix */
+header {
+  text-align: center;
+  /* Centers the image */
+  height: auto;
+  /* Adjust height based on image */
+}
+
+header .img {
+  width: 10%;
+  /* Shrinks the image while keeping full visibility */
+  height: auto;
+  /* Maintains aspect ratio */
+  max-height: 195px;
+  /* Ensures the header is not too tall */
 }
 
 
@@ -73,7 +83,8 @@ header {
 /* Position the menu icon to the left */
 .menu-icon {
   position: absolute;
-  left: 10px; /* Adjust this value to position the icon as needed */
+  left: 10px;
+  /* Adjust this value to position the icon as needed */
   font-size: 30px;
   cursor: pointer;
 }
@@ -85,10 +96,14 @@ header {
   padding: 0;
   margin: 0;
   position: absolute;
-  left: 10px; /* Align the menu to the left */
-  top: 50px; /* Adjust this value to position the menu below the icon */
-  background-color: #fff; /* Optional: Add background color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  left: 10px;
+  /* Align the menu to the left */
+  top: 50px;
+  /* Adjust this value to position the menu below the icon */
+  background-color: #fff;
+  /* Optional: Add background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Add shadow for better visibility */
 }
 
 /* Style the menu items */
@@ -101,7 +116,8 @@ header {
   text-decoration: none;
   color: #000;
   display: block;
-  padding: 10px; /* Optional: Add padding for better spacing */
+  padding: 10px;
+  /* Optional: Add padding for better spacing */
 }
 
 /* Show the menu when active */
@@ -109,3 +125,37 @@ header {
   display: block;
 }
 
+/* Form */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #918FA3;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0, 0.1);
+  color: #f4f4f4;
+  box-sizing: 720px;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+#contact-info {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
