@@ -164,17 +164,6 @@ label {
   font-weight: bold;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f4f4f4;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-
 /* for confirmation page text */
 #confirmation-details {
   text-align: center; /* Centers text content */
@@ -206,18 +195,13 @@ body {
 }
 
 .footer {
-  background-color: #333;
+  background-color: #918FA3;
   color: white;
   text-align: center;
   padding: 10px;
   bottom: 0;
   width: 100%;
 }
-
-.footer h2 {
-  margin: 0;
-}
-
 
 
 .quote-container {
