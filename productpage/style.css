@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-image: url('/inbloomhomepage/universal images/header.jpg');
+    background-image: url('/universal_images/headerv2.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -117,7 +117,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-image: url('/inbloomhomepage/universal images/footer\ background.jpg');
+    background-image: url('/universal_images/footer\ background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
