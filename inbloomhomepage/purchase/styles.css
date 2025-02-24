@@ -168,3 +168,17 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
+
+/* for confirmation page text */
+#confirmation-details {
+  text-align: center; /* Centers text content */
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto; /* Centers the div horizontally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
