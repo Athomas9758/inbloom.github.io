@@ -53,22 +53,26 @@ button {
 
 
 
-/*will fix */
 header {
-  text-align: center;
-  /* Centers the image */
-  height: auto;
-  /* Adjust height based on image */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Adjust if needed */
+  z-index: 1000; /* Ensures it stays above other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
 
-header .img {
-  width: 10%;
-  /* Shrinks the image while keeping full visibility */
-  height: auto;
-  /* Maintains aspect ratio */
-  max-height: 195px;
-  /* Ensures the header is not too tall */
+header img {
+  width: 100%; /* Ensures the image spans the full width */
+  display: block;
 }
+
+body {
+  margin: 0;
+  padding-top: 10px; /* Adjust based on header height to prevent content from being hidden */
+}
+
 
 
 
@@ -182,3 +186,48 @@ footer {
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1530px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h2 {
+  margin: 0;
+}
+
+
+
+.quote-container {
+  text-align: center; /* Centers inline elements like images */
+  margin: 20px 0; /* Adds some space around the image */
+}
+
+.quote-container img {
+  display: block; /* Removes extra spacing under the image */
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 50%; /* Adjust as needed */
+}
+
