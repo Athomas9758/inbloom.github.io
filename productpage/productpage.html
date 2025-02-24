@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="productpage.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Flower Collection</h1>
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+                <li><a href="abtUs/aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+            </ul>
+        </nav> -->
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="menu">
+              <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+              <li><a href="shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+              <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+              <li><a href="abtUs/aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="product-grid">
+            <div class="product-item">
+                <img src="images/image1.png" alt="Red Roses">
+                <div class="details">
+                    <h2>Red Roses Bouquet</h2>
+                    <p>Beautifully arranged red roses wrapped elegantly.</p>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Red Roses Bouquet', 49.99)">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Red Roses Bouquet', 49.99)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/multi_color_flowers.png" alt="Mixed Peonies">
+                <div class="details">
+                    <h2>Mixed Peonies Arrangement</h2>
+                    <p>A stunning mix of peonies in a glass vase.</p>
+                    <p class="price">$59.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Mixed Peonies Arrangement', 59.99)">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Mixed Peonies Arrangement', 59.99)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/lily_bouquet.png" alt="Lily Bouquet">
+                <div class="details">
+                    <h2>Lily Bouquet</h2>
+                    <p>Elegant lilies arranged beautifully.</p>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Lily Bouquet', 49.99)">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Lily Bouquet', 49.99)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/sunflower_bouquet.png" alt="Sunflower Bouquet">
+                <div class="details">
+                    <h2>Sunflower Bouquet</h2>
+                    <p>Bright and cheerful sunflowers.</p>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Sunflower Bouquet', 49.99)">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Sunflower Bouquet', 49.99)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/white_roses.png" alt="White Roses">
+                <div class="details">
+                    <h2>White Roses Bouquet</h2>
+                    <p>Pure and elegant white roses.</p>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" onclick="addToCart('White Roses Bouquet', 49.99)">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('White Roses Bouquet', 49.99)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/black_roses.png" alt="Black Roses">
+                <div class="details">
+                    <h2>Black Roses Bouquet</h2>
+                    <p>Unique and mysterious black roses.</p>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" onclick="addToCart('Black Roses Bouquet', 49.99)">Add to Cart</button>
+                    <button class="buy-now" onclick="buyNow('Black Roses Bouquet', 49.99)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We provide the freshest flowers for every occasion.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@flowershop.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+        </div>
+        <p>&copy; 2025 Flower Shop. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function addToCart(product, price) {
+            alert(`${product} has been added to the cart for $${price}`);
+        }
+
+        function buyNow(product, price) {
+            alert(`Proceeding to checkout for ${product} at $${price}`);
+        }
+    </script>
+</body>
+</html>
