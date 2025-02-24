@@ -16,12 +16,13 @@
         <nav>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <ul id="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
-                <li><a href="abtUs/aboutUs.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+              <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+              <li><a href="shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+              <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+              <li><a href="abtUs/aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
+              <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+          </ul>
+        </nav>
         </nav>
     </header>
 
@@ -32,21 +33,22 @@
         <form action="contactFormHandler.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
+<br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
+<br>
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
+<br>
             <button type="submit">Send Message</button>
         </form>
 
         <!-- Contact Info -->
         <div class="contact-info">
+        
             <h2>Our Contact Details</h2>
-            <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Baltimore, MD</p> <!-- Change address -->
-            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> 154, La Fleur Crescent, Kitchener, ON, Canada</p>
+            <p><i class="fas fa-phone"></i> (888) 545-2222</p>
             <p><i class="fas fa-envelope"></i> hello@inbloom.com</p>
         </div>
     </div>
