@@ -117,52 +117,59 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-image: url('/universal_images/footer\ background.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 60px 20px;
+    padding: 5px 5px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #918FA3; /* Muted purple-gray as fallback */
-}
-
-.footer-container {
+  }
+  
+  .footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: rgba(145, 143, 163, 0.8); /* Semi-transparent purple-gray overlay */
     padding: 20px;
     border-radius: 10px;
-}
-
-.footer-section {
+  }
+  
+  .footer-section {
     margin: 10px;
     max-width: 300px;
-}
-
-.footer-section h3 {
+  }
+  
+  .footer-section h3 {
+    margin-top: 50px;
     margin-bottom: 10px;
     color: #fff;
-}
-
-.footer-section p {
+  }
+  
+  .footer-section p {
     margin: 5px 0;
     color: #ddd;
-}
+  }
 
 /* Additional Styling for Color Blocks (Optional) */
-#colorblock1 {
-    background-color: #918FA3; /* Muted purple-gray */
+#colorblock1{
+    background-color: #918FA3;
     height: 33.3px;
-}
-
-#colorblock2 {
-    background-color: #EAC2B9; /* Soft pink */
+  }
+  #colorblock2{
+    background-color: #EAC2B9;
     height: 33.3px;
-}
-
-#colorblock3 {
-    background-color: #F7F4E9; /* Light beige */
+  }
+  #colorblock3{
+    background-color: #F7F4E9;
     height: 33.3px;
-}
+  }
+  
+  #colorblock5{
+    background-color: #EAC2B9;
+    height: 55.3px;
+  }
+  
+  #colorblock4{
+    background-color: #F7F4E9;
+    height: 55.3px;
+  }
