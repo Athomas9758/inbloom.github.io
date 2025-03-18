@@ -83,9 +83,19 @@ function updateCartDisplay() {
   totalPrice = 0;
 
   // Add updated items to the cart list
-  cart.forEach(item => {
+  cart.forEach((item, index) => {
     const listItem = document.createElement("li");
+
+    // Display item name and price
     listItem.textContent = `${item.product} - $${item.price}`;
+
+    // Add a remove button for each item
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.classList.add("remove-btn");
+    removeButton.addEventListener("click", () => removeItem(index));
+
+    listItem.appendChild(removeButton);
     cartItemsList.appendChild(listItem);
 
     // Calculate total price
@@ -96,12 +106,22 @@ function updateCartDisplay() {
   totalPriceElement.textContent = totalPrice.toFixed(2);
 }
 
+// Function to remove an item from the cart
+function removeItem(index) {
+  cart.splice(index, 1); // Remove the item from the cart array
+  localStorage.setItem("cart", JSON.stringify(cart)); // Update localStorage
+  updateCartDisplay(); // Refresh the cart display
+}
+
 // Function to handle checkout
 function checkout() {
   if (cart.length === 0) {
     alert("Your cart is empty. Please add items before checking out.");
     return;
   }
+
+  // Store the total price in localStorage for the confirmation page
+  localStorage.setItem("totalPrice", totalPrice);
 
   // Redirect to the confirmation page
   window.location.href = "confirmation.html";
