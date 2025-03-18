@@ -6,12 +6,16 @@
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
-    background-image: url("/universal_images/headerv2.jpg");
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-size: cover;
-    position: relative;
-    padding-left: 20px; /* Add some padding to the left */
+    position: relative; /* Add some padding to the left */
+}
+#header_container img {
+  width: 100%; /* Ensures the image spans the full width */
+  display: block;
+  
+
 }
 
 .menu-icon {
@@ -71,7 +75,6 @@ body{
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
 }
 p{
     font-size: 1.2em;
