@@ -11,24 +11,23 @@
 
 <body>
 
-    <header>
-        <img src="/universal_images/headerv2.jpg" alt="Header Image">
+<header>
+    <img src="/universal_images/headerv2.jpg" alt="Header Image">
         <nav>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-            <ul id="menu">
-                <li><a href="/inbloomhomepage/homepagestuff/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="/productpage/productpage.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
-                <li><a href="/purchase/cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
-                <li><a href="/abtUs/aboutUs.html"><i class="fa-solid fa-person-dress"></i><i
-                            class="fa-solid fa-person"></i> About</a></li>
-                <li><a href="/contact/contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+          <ul id="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="productpage.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+            <li><a href="aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
+            <li><a href="contact.php"><i class="fa-solid fa-message"></i> Contact</a></li>
+        </ul>
+      </nav>
+  </header>
 
-    <div id="colorblock1"></div>
-    <div id="colorblock2"></div>
-    <div id="colorblock3"></div>
+  <div id="colorblock1"></div>
+  <div id="colorblock2"></div>
+  <div id="colorblock3"></div>
 
     </div>
 
@@ -48,7 +47,10 @@
             <br>
             <button type="submit">Send Message</button>
         </form>
+<?php
 
+
+?>
 
 
 
