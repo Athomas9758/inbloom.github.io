@@ -10,30 +10,15 @@
 <body>
     <header>
         <h1>Flower Collection</h1>
-        <!-- <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="shop.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
-                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
-                <li><a href="abtUs/aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
-                <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
-            </ul>
-        </nav> -->
         <nav>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <ul id="menu">
                 <li><a href="/inbloomhomepage/homepagestuff/index.html"><i class="fa-solid fa-house"></i>Home</a></li>
-              <li><a href="/productpage/productpage.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
-              <li><a href="/purchase/cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
-              <li><a href="/abtUs/aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
-              <li><a href="/contact/contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
-
-            
-          </ul>
+                <li><a href="/productpage/productpage.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+                <li><a href="/purchase/cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+                <li><a href="/abtUs/aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
+                <li><a href="/contact/contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+            </ul>
         </nav>
     </header>
     
@@ -45,8 +30,8 @@
                     <h2>Red Roses Bouquet</h2>
                     <p>Beautifully arranged red roses wrapped elegantly.</p>
                     <p class="price">$49.99</p>
-                    <button class="add-to-cart" onclick="addToCart('Red Roses Bouquet', 49.99)">Add to Cart</button>
-                    <button class="buy-now" onclick="buyNow('Red Roses Bouquet', 49.99)">Buy Now</button>
+                    <button class="add-to-cart" data-product="Red Roses Bouquet" data-price="49.99">Add to Cart</button>
+                    <button class="buy-now" data-product="Red Roses Bouquet" data-price="49.99">Buy Now</button>
                 </div>
             </div>
 
@@ -56,8 +41,8 @@
                     <h2>Mixed Peonies Arrangement</h2>
                     <p>A stunning mix of peonies in a glass vase.</p>
                     <p class="price">$59.99</p>
-                    <button class="add-to-cart" onclick="addToCart('Mixed Peonies Arrangement', 59.99)">Add to Cart</button>
-                    <button class="buy-now" onclick="buyNow('Mixed Peonies Arrangement', 59.99)">Buy Now</button>
+                    <button class="add-to-cart" data-product="Mixed Peonies Arrangement" data-price="59.99">Add to Cart</button>
+                    <button class="buy-now" data-product="Mixed Peonies Arrangement" data-price="59.99">Buy Now</button>
                 </div>
             </div>
 
@@ -67,8 +52,8 @@
                     <h2>Lily Bouquet</h2>
                     <p>Elegant lilies arranged beautifully.</p>
                     <p class="price">$49.99</p>
-                    <button class="add-to-cart" onclick="addToCart('Lily Bouquet', 49.99)">Add to Cart</button>
-                    <button class="buy-now" onclick="buyNow('Lily Bouquet', 49.99)">Buy Now</button>
+                    <button class="add-to-cart" data-product="Lily Bouquet" data-price="49.99">Add to Cart</button>
+                    <button class="buy-now" data-product="Lily Bouquet" data-price="49.99">Buy Now</button>
                 </div>
             </div>
 
@@ -78,8 +63,8 @@
                     <h2>Sunflower Bouquet</h2>
                     <p>Bright and cheerful sunflowers.</p>
                     <p class="price">$49.99</p>
-                    <button class="add-to-cart" onclick="addToCart('Sunflower Bouquet', 49.99)">Add to Cart</button>
-                    <button class="buy-now" onclick="buyNow('Sunflower Bouquet', 49.99)">Buy Now</button>
+                    <button class="add-to-cart" data-product="Sunflower Bouquet" data-price="49.99">Add to Cart</button>
+                    <button class="buy-now" data-product="Sunflower Bouquet" data-price="49.99">Buy Now</button>
                 </div>
             </div>
 
@@ -89,8 +74,8 @@
                     <h2>White Roses Bouquet</h2>
                     <p>Pure and elegant white roses.</p>
                     <p class="price">$49.99</p>
-                    <button class="add-to-cart" onclick="addToCart('White Roses Bouquet', 49.99)">Add to Cart</button>
-                    <button class="buy-now" onclick="buyNow('White Roses Bouquet', 49.99)">Buy Now</button>
+                    <button class="add-to-cart" data-product="White Roses Bouquet" data-price="49.99">Add to Cart</button>
+                    <button class="buy-now" data-product="White Roses Bouquet" data-price="49.99">Buy Now</button>
                 </div>
             </div>
 
@@ -100,8 +85,8 @@
                     <h2>Black Roses Bouquet</h2>
                     <p>Unique and mysterious black roses.</p>
                     <p class="price">$49.99</p>
-                    <button class="add-to-cart" onclick="addToCart('Black Roses Bouquet', 49.99)">Add to Cart</button>
-                    <button class="buy-now" onclick="buyNow('Black Roses Bouquet', 49.99)">Buy Now</button>
+                    <button class="add-to-cart" data-product="Black Roses Bouquet" data-price="49.99">Add to Cart</button>
+                    <button class="buy-now" data-product="Black Roses Bouquet" data-price="49.99">Buy Now</button>
                 </div>
             </div>
         </section>
@@ -125,15 +110,5 @@
         </div>
         <p>&copy; 2025 Flower Shop. All rights reserved.</p>
     </footer>
-    
-    <script>
-        function addToCart(product, price) {
-            alert(`${product} has been added to the cart for $${price}`);
-        }
-
-        function buyNow(product, price) {
-            alert(`Proceeding to checkout for ${product} at $${price}`);
-        }
-    </script>
 </body>
 </html>
