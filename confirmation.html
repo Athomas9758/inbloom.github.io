@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation</title>
+  <link rel="stylesheet" href="purchase/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+</head>
+<body>
+
+  <header>
+    <img src="universal_images/headerv2.jpg" alt="Header Image">
+        <nav>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+          <ul id="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="productpage.html"><i class="fa-solid fa-shop"></i> Shop</a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+            <li><a href="aboutUs.html"><i class="fa-solid fa-person-dress"></i><i class="fa-solid fa-person"></i> About</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <div id="colorblock1"></div>
+  <div id="colorblock2"></div>
+  <div id="colorblock3"></div>
+    
+  </div>
+
+  <h1>Order Confirmation</h1>
+
+  <div id="confirmation-details"> <!-- Figure out how to use these details? -->
+    <h2>Thank You For Your Purchase!</h2>
+    <p>Here are the details of your purchase:</p>
+    <p>Order Number: [Order Number]</p>
+    <p>Date: [Date]</p>
+    <p>Delivery Details: [Delivery Address or Pickup Location]</p>
+    <p>Estimated Delivery: [Delivery Date and Time]</p>
+    <ul id="order-items">
+      <!-- Items will be dynamically added here -->
+    </ul>
+    <p>Total Price: $<span id="order-total-price"></span></p>
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We provide the freshest flowers for every occasion.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: hello@inbloom.com</p>
+            <p>Phone: (111) 555-2222</p>
+            <p>Address: 123 Flower Street, Kitchener, ON, Canada</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Facebook | Instagram | Twitter</p>
+        </div>
+    </div>
+    <br>
+    <p>&copy; 2025 Flower Shop. All rights reserved.</p>
+</footer>
+
+  <script src="purchase/script.js">
+
+       
+    // Get cart data from localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const totalPrice = localStorage.getItem('totalPrice') || 0;
+
+    // Display cart details on the confirmation page
+    const orderItemsList = document.getElementById('order-items');
+    const orderTotalPrice = document.getElementById('order-total-price');
+
+    cart.forEach(item => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${item.itemName} - $${item.price}`;
+      orderItemsList.appendChild(listItem);
+    });
+
+    orderTotalPrice.textContent = totalPrice;
+
+
+  </script>
+
+
+</body>
+</html>
