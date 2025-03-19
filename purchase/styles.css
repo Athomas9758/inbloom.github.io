@@ -26,6 +26,10 @@ font-size: 30px;
   /* changed font */
 }
 
+p {
+  color: #918FA3;
+}
+
 .item {
   background-color: #f4f4f4;
   padding: 20px;
@@ -79,13 +83,6 @@ header img {
   /* Ensures the image spans the full width */
   display: block;
 }
-
-body {
-  margin: 0;
-  padding-top: 10px;
-  /* Adjust based on header height to prevent content from being hidden */
-}
-
 
 
 /* Hamburger Menu */
@@ -200,6 +197,7 @@ body {
   /* change font */
   margin: 0;
   padding: 0;
+  color: #918FA3;
 }
 
 .container {
