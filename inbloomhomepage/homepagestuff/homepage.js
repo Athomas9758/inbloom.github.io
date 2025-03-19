@@ -1,4 +1,3 @@
-  // Navigation menu //
 function toggleMenu() {
     var menu = document.getElementById('menu');
     menu.classList.toggle('active');
@@ -17,7 +16,3 @@ function toggleMenu() {
   
   // Hide the menu when clicking outside of it
   document.addEventListener('click', handleClickOutsideMenu);
-
-  // Navigation menu //
-
-  
