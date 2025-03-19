@@ -21,13 +21,9 @@ h2 {
   text-align: center;
   color: #918FA3;
   font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  font-size: 30px;
+font-weight: bold;
+font-size: 30px;
   /* changed font */
-}
-
-p {
-  color: #918FA3;
 }
 
 .item {
@@ -51,7 +47,6 @@ p {
 }
 
 
-
 button {
   padding: 10px;
   background-color: #EAC2B9;
@@ -64,7 +59,6 @@ button {
   font-weight: bold;
   justify-content: center;
 }
-
 
 
 header {
@@ -91,7 +85,6 @@ body {
   padding-top: 10px;
   /* Adjust based on header height to prevent content from being hidden */
 }
-
 
 
 
@@ -304,10 +297,57 @@ footer {
   height: 55.3px;
 }
 
+
+
 #introquote {
   text-align: center;
   font-style: italic;
   font-size: 20px;
   padding: 20px;
   color: #918FA3;
+}
+
+/* about */
+#wrapper{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 70%;
+}
+.contentblock1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.image-grid {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding-left: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  
+}
+#header_container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  position: relative; /* Add some padding to the left */
+}
+#header_container img {
+width: 100%; /* Ensures the image spans the full width */
+display: block;
+
+
+
 }
