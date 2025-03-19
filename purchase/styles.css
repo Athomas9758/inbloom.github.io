@@ -272,8 +272,9 @@ footer {
   /* Removes extra spacing under the image */
   margin: 0 auto;
   /* Centers the image horizontally */
-  width: 50%;
-  /* Adjust as needed */
+  max-width: 80%;
+  height: 20%;
+  /* Maintains aspect ratio */
 }
 
 #blocks-container2 {
