@@ -10,7 +10,10 @@ h1 {
   padding: 30px;
   text-align: center;
   color: #918FA3;
-  font-family: 'Times New Roman', Times, serif';
+  font-family: "pacifico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48pt;
   /* change font */
 }
 
