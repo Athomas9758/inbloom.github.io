@@ -15,7 +15,6 @@ h1 {
 }
 
 
-
 .item {
   background-color: #f4f4f4;
   padding: 20px;
@@ -37,7 +36,6 @@ h1 {
 }
 
 
-
 button {
   padding: 10px;
   background-color: #EAC2B9;
@@ -50,7 +48,6 @@ button {
   font-weight: bold;
   justify-content: center;
 }
-
 
 
 header {
@@ -72,7 +69,6 @@ body {
   margin: 0;
   padding-top: 10px; /* Adjust based on header height to prevent content from being hidden */
 }
-
 
 
 
@@ -177,7 +173,6 @@ label {
 }
 
 
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -270,3 +265,5 @@ footer {
   background-color: #F7F4E9;
   height: 55.3px;
 }
+
+
