@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     $to = "your-email@example.com";
-    $subject = "New Contact Form Submission";
+    $subject = "Contact Form Submission";
     $headers = "From: $email";
 
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
@@ -14,6 +14,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $body, $headers)) {
         echo "Thank you, $name! Your message has been sent.";
     } else {
-        echo "Sorry, there was an error. Please try again later.";
+        echo "Please try again.";
     }
 ?>
