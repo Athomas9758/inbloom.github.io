@@ -269,12 +269,11 @@ footer {
 
 .quote-container img {
   display: block;
-  /* Removes extra spacing under the image */
   margin: 0 auto;
   /* Centers the image horizontally */
-  max-width: 80%;
-  height: 20%;
-  /* Maintains aspect ratio */
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
 }
 
 #blocks-container2 {
