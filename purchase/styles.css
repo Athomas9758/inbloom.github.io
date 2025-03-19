@@ -7,7 +7,6 @@ body {
 }
 
 h1 {
-  padding: 30px;
   text-align: center;
   color: #918FA3;
   font-family: "pacifico", sans-serif;
@@ -17,7 +16,19 @@ h1 {
   /* change font */
 }
 
+h2 {
+  padding: 30px;
+  text-align: center;
+  color: #918FA3;
+  font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 30px;
+  /* changed font */
+}
 
+p {
+  color: #918FA3;
+}
 
 .item {
   background-color: #f4f4f4;
@@ -73,13 +84,6 @@ header img {
   display: block;
 }
 
-body {
-  margin: 0;
-  padding-top: 10px;
-  /* Adjust based on header height to prevent content from being hidden */
-}
-
-
 
 /* Hamburger Menu */
 /* Style the header to position elements */
@@ -96,6 +100,7 @@ header {
   /* Adjust this value to position the icon as needed */
   font-size: 30px;
   cursor: pointer;
+
 }
 
 /* Hide the menu by default */
@@ -118,12 +123,13 @@ header {
 /* Style the menu items */
 #menu li {
   margin: 10px 0;
+  color: #918FA3;
 }
 
 /* Style the menu links */
 #menu li a {
   text-decoration: none;
-  color: #000;
+  color: #918FA3;
   display: block;
   padding: 10px;
   /* Optional: Add padding for better spacing */
@@ -191,6 +197,7 @@ body {
   /* change font */
   margin: 0;
   padding: 0;
+  color: #918FA3;
 }
 
 .container {
@@ -202,15 +209,6 @@ body {
 .header-img {
   width: 100%;
 }
-
-/* .footer {
-  background-color: #918FA3;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-} */
 
 footer {
   background-size: cover;
@@ -304,6 +302,7 @@ footer {
   font-style: italic;
   font-size: 20px;
   padding: 20px;
+  color: #918FA3;
 }
 
 /* about */
