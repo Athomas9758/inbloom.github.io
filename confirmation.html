@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Order Confirmation</title>
-  <link rel="stylesheet" href="purchase/styles.css">
+  <link rel="stylesheet" href="/purchase/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ses5mal.css">
   
 </head>
 <body>
 
   <header>
-    <img src="universal_images/headerv2.jpg" alt="Header Image">
+    <img src="/universal_images/headerv2.jpg" alt="Header Image">
         <nav>
           <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
           <ul id="menu">
@@ -23,7 +24,7 @@
         </ul>
       </nav>
   </header>
-
+ 
   <div id="colorblock1"></div>
   <div id="colorblock2"></div>
   <div id="colorblock3"></div>
@@ -33,18 +34,16 @@
   <h1>Order Confirmation</h1>
 
   <div id="confirmation-details"> <!-- Figure out how to use these details? -->
-    <h2>Thank You For Your Purchase!</h2>
-    <p>Here are the details of your purchase:</p>
-    <p>Order Number: [Order Number]</p>
-    <p>Date: [Date]</p>
-    <p>Delivery Details: [Delivery Address or Pickup Location]</p>
-    <p>Estimated Delivery: [Delivery Date and Time]</p>
+    <h2>Thank you for choosing In Bloom!🌺</h2>
+    <p>We're honored to be part of your special moments. Enjoy your beautiful blooms!</p>
     <ul id="order-items">
       <!-- Items will be dynamically added here -->
     </ul>
-    <p>Total Price: $<span id="order-total-price"></span></p>
+    <!-- There was a total summary here -->
   </div>
 
+  <div id="colorblock4"></div>
+  <div id="colorblock5"></div>
 
   <footer>
     <div class="footer-container">
@@ -67,9 +66,9 @@
     <p>&copy; 2025 Flower Shop. All rights reserved.</p>
 </footer>
 
-  <script src="purchase/script.js">
+  <script src="/purchase/script.js">
 
-       
+    // Need to figure out if this works  
     // Get cart data from localStorage
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const totalPrice = localStorage.getItem('totalPrice') || 0;

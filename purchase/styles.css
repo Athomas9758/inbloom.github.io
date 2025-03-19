@@ -1,5 +1,5 @@
 body {
-  font-family: 'Times';
+  font-family: 'Times New Roman', Times, serif;
   /* change font */
   background-color: white;
   margin: 0;
@@ -10,9 +10,13 @@ h1 {
   padding: 30px;
   text-align: center;
   color: #918FA3;
-  font-family: 'Times';
+  font-family: "pacifico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48pt;
   /* change font */
 }
+
 
 
 .item {
@@ -55,19 +59,24 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white; /* Adjust if needed */
-  z-index: 1000; /* Ensures it stays above other content */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  background-color: white;
+  /* Adjust if needed */
+  z-index: 1000;
+  /* Ensures it stays above other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Optional shadow for better visibility */
 }
 
 header img {
-  width: 100%; /* Ensures the image spans the full width */
+  width: 100%;
+  /* Ensures the image spans the full width */
   display: block;
 }
 
 body {
   margin: 0;
-  padding-top: 10px; /* Adjust based on header height to prevent content from being hidden */
+  padding-top: 10px;
+  /* Adjust based on header height to prevent content from being hidden */
 }
 
 
@@ -146,7 +155,8 @@ form {
   align-items: center;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -162,9 +172,12 @@ label {
 
 /* for confirmation page text */
 #confirmation-details {
-  text-align: center; /* Centers text content */
-  width: 50%; /* Adjust width as needed */
-  margin: 0 auto; /* Centers the div horizontally */
+  text-align: center;
+  /* Centers text content */
+  width: 50%;
+  /* Adjust width as needed */
+  margin: 0 auto;
+  /* Centers the div horizontally */
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -174,7 +187,8 @@ label {
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  /* change font */
   margin: 0;
   padding: 0;
 }
@@ -202,23 +216,28 @@ footer {
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 5px 5px;
+  padding: 20px;
   text-align: center;
   margin-top: 0px;
-  background-color: #918FA3; /* Muted purple-gray as fallback */
+  background-color: #918FA3;
+  /* Muted purple-gray as fallback */
 }
 
 .footer-container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 20px;
   border-radius: 10px;
+  background-color: #918FA3;
 }
 
 .footer-section {
-  margin: 10px;
+  flex: 1;
+  margin: 0 10px;
   max-width: 300px;
+  min-width: 200px;
+  text-align: center;
 }
 
 .footer-section h3 {
@@ -231,39 +250,103 @@ footer {
   margin: 5px 0;
   color: #ddd;
 }
+
 /* */
 .quote-container {
-  text-align: center; /* Centers inline elements like images */
-  margin: 20px 0; /* Adds some space around the image */
+  text-align: center;
+  /* Centers inline elements like images */
+  margin: 20px 0;
+  /* Adds some space around the image */
 }
 
 .quote-container img {
-  display: block; /* Removes extra spacing under the image */
-  margin: 0 auto; /* Centers the image horizontally */
-  width: 50%; /* Adjust as needed */
+  display: block;
+  margin: 0 auto;
+  /* Centers the image horizontally */
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
 }
 
-#colorblock1{
+#blocks-container2 {
+  padding-top: 50px;
+}
+
+#colorblock1 {
   background-color: #918FA3;
   height: 33.3px;
 }
-#colorblock2{
+
+#colorblock2 {
   background-color: #EAC2B9;
   height: 33.3px;
 }
-#colorblock3{
+
+#colorblock3 {
   background-color: #F7F4E9;
   height: 33.3px;
 }
 
-#colorblock5{
+#colorblock5 {
   background-color: #EAC2B9;
   height: 55.3px;
 }
 
-#colorblock4{
+#colorblock4 {
   background-color: #F7F4E9;
   height: 55.3px;
 }
 
 
+
+#introquote {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* about */
+#wrapper{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 70%;
+}
+.contentblock1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.image-grid {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding-left: 20px;
+  width: 100%;
+  flex-direction: column;
+}
+.image-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+  
+}
+#header_container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  position: relative; /* Add some padding to the left */
+}
+#header_container img {
+width: 100%; /* Ensures the image spans the full width */
+display: block;
+
+
+
+}
