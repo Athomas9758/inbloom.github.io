@@ -1,9 +1,8 @@
 body {
   font-family: 'Times New Roman', Times, serif;
-  /* change font */
-  background-color: white;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  color: #918FA3;
 }
 
 h1 {
@@ -21,8 +20,8 @@ h2 {
   text-align: center;
   color: #918FA3;
   font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-font-size: 30px;
+  font-weight: bold;
+  font-size: 30px;
   /* changed font */
 }
 
@@ -59,10 +58,15 @@ button {
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  font-family: 'Times';
-  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d19f9c;
+  /* Slightly darker on hover */
 }
 
 
@@ -81,9 +85,10 @@ header {
 
 header img {
   width: 100%;
-  /* Ensures the image spans the full width */
-  display: block;
+  height: auto;
+  /* Keeps the aspect ratio intact */
 }
+
 
 
 /* Hamburger Menu */
@@ -119,6 +124,9 @@ header {
   /* Optional: Add background color */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Optional: Add shadow for better visibility */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 /* Style the menu items */
@@ -139,6 +147,8 @@ header {
 /* Show the menu when active */
 #menu.active {
   display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Form */
@@ -192,15 +202,6 @@ label {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-body {
-  font-family: 'Times New Roman', Times, serif;
-  /* change font */
-  margin: 0;
-  padding: 0;
-  color: #918FA3;
-}
-
 .container {
   width: 1530px;
   margin: 0 auto;
@@ -217,19 +218,22 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 0;
   background-color: #918FA3;
+  overflow: hidden;
   /* Muted purple-gray as fallback */
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px;
   border-radius: 10px;
   background-color: #918FA3;
+
 }
+
 
 .footer-section {
   flex: 1;
@@ -297,18 +301,20 @@ footer {
 }
 
 /* about */
-#wrapper{
+#wrapper {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   width: 70%;
 }
-.contentblock1{
+
+.contentblock1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .image-grid {
   display: flex;
   justify-content: space-around;
@@ -317,25 +323,32 @@ footer {
   width: 100%;
   flex-direction: column;
 }
+
 .image-grid img {
   width: 100%;
+  max-width: 300px;
+  /* Prevent large images from breaking layout */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding-bottom: 10px;
-  
 }
+
 #header_container {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: flex-start;
+  /* Align items to the left */
   align-items: center;
   width: 100%;
   height: 250px;
   background-size: cover;
-  position: relative; /* Add some padding to the left */
+  position: relative;
+  /* Add some padding to the left */
 }
+
 #header_container img {
-width: 100%; /* Ensures the image spans the full width */
-display: block;
+  width: 100%;
+  /* Ensures the image spans the full width */
+  display: block;
 
 
 
@@ -359,7 +372,8 @@ display: block;
   max-width: 250px;
   margin: 10px;
   transition: transform 0.3s ease;
-  background-color: #F7F4E9; /* Light beige for product items */
+  background-color: #F7F4E9;
+  /* Light beige for product items */
 }
 
 .product-item:hover {
@@ -374,7 +388,8 @@ display: block;
 .details h2 {
   font-size: 1.5em;
   margin: 10px 0;
-  color: #918FA3; /* Muted purple-gray for headings */
+  color: #918FA3;
+  /* Muted purple-gray for headings */
 }
 
 .details p {
@@ -384,12 +399,15 @@ display: block;
 
 .price {
   font-size: 1.2em;
-  color: #EAC2B9; /* Soft pink for prices */
+  color: #EAC2B9;
+  /* Soft pink for prices */
   font-weight: bold;
 }
 
-.add-to-cart, .buy-now {
-  background: #918FA3; /* Muted purple-gray for buttons */
+.add-to-cart,
+.buy-now {
+  background: #918FA3;
+  /* Muted purple-gray for buttons */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -400,14 +418,22 @@ display: block;
   transition: background 0.3s ease;
 }
 
-.add-to-cart:hover, .buy-now:hover {
-  background: #7A788F; /* Darker shade of purple-gray for hover */
+.add-to-cart:hover,
+.buy-now:hover {
+  background: #7A788F;
+  /* Darker shade of purple-gray for hover */
 }
 
 .buy-now {
-  background: #EAC2B9; /* Soft pink for Buy Now button */
+  background: #EAC2B9;
+  /* Soft pink for Buy Now button */
 }
 
 .buy-now:hover {
-  background: #D8AFA7; /* Darker shade of soft pink for hover */
+  background: #D8AFA7;
+  /* Darker shade of soft pink for hover */
+}
+
+* {
+  box-sizing: border-box;
 }
