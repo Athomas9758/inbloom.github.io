@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Add item to cart and redirect to checkout
             addToCart(product, price);
-            window.location.href = "/purchase/cart.html"; // Redirect to cart page
+            window.location.href = "purchase/cart.html"; // Redirect to cart page
         });
     });
 
