@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="purchase/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/ses5mal.css">
+
+    <style>
+        body {
+            text-align: center; /* Centers the text */
+        }
+    </style>
+    
 </head>
 <body>
 
@@ -55,6 +62,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="purchase/script.js"></script>
 
 </body>
 </html>
