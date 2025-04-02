@@ -14,15 +14,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Buy Now functionality
+    // Buy Now functionality (adds item to cart first, then redirects)
     buyNowButtons.forEach(button => {
         button.addEventListener("click", function () {
             const product = button.getAttribute("data-product");
             const price = button.getAttribute("data-price");
 
-            // Add item to cart and redirect to checkout
+            // Add item to cart first
             addToCart(product, price);
-            window.location.href = "purchase/cart.html"; // Redirect to cart page
+
+            // Use a slight delay to ensure data is stored before redirecting
+            setTimeout(() => {
+                window.location.href = "cart.html"; // Redirect to cart page
+            }, 200);
         });
     });
 
