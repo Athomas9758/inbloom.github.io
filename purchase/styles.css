@@ -40,6 +40,13 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 #cart {
   background-color: #f4f4f4;
   padding: 20px;
@@ -48,7 +55,6 @@ p {
   width: 300px;
   margin: 0 auto;
   text-align: center;
-  list-style-type: none;
 }
 
 button {
