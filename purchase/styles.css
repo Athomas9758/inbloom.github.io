@@ -50,6 +50,12 @@ p {
   text-align: center;
 }
 
+#cart ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 button {
   padding: 10px;
